@@ -2,7 +2,8 @@
 
 To run:
 1. install the packages from the script:
-```install.packages("tidyverse")
+```
+install.packages("tidyverse")
 install.packages("tm")
 install.packages("koRpus")
 install.packages("magrittr")
