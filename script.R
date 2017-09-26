@@ -3,6 +3,8 @@ library(koRpus) #flesch
 library(magrittr) # %<% operator
 library(tm) #removing Punctuation etc
 
+treetagger_path = "~/Documents/treetagger/" #your treetagger path!
+
 #saving all file names
 filenames <- list.files(pattern = "\\.txt")
 
@@ -10,7 +12,7 @@ filenames <- list.files(pattern = "\\.txt")
 read.content <- function(my.file) {
   tagged.text <- treetag(my.file, treetagger="manual",
                          lang="en", 
-                         TT.options=list(path="~/Documents/treetagger/", 
+                         TT.options=list(path=treetagger_path, 
                          preset="en"))
   #path to treetagger should be set to your local installation location
   flesch.score <- flesch(tagged.text)
