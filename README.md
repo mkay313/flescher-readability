@@ -3,10 +3,7 @@
 To run:
 1. install the packages from the script:
 ```
-install.packages("tidyverse")
-install.packages("tm")
-install.packages("koRpus")
-install.packages("magrittr")
+install.packages(c("tidyverse","tm","koRpus","magrittr"))
 ```
 
 2. install treetagger (instructions: http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
